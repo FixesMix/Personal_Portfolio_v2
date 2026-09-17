@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   cursor: url("assets/cursor_lime.png"), auto;

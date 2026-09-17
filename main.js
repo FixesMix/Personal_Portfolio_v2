@@ -3,6 +3,18 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+const lightbulb = document.querySelector('.col-start-2.row-start-1'); // your lightbulb button
+
+lightbulb.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+  localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+// persist on refresh
+if (localStorage.getItem('theme') === 'dark') {
+  document.documentElement.classList.add('dark');
+}
+
 
 document.querySelector(".The-Dictionary").addEventListener('dblclick', () => {
   window.open('https://github.com/FixesMix/Dictionary_1.0.0', '_blank');
