@@ -3,7 +3,7 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
-const lightbulb = document.querySelector('.col-start-2.row-start-1'); // your lightbulb button
+const lightbulb = document.querySelector('.col-start-2.row-start-1');
 
 lightbulb.addEventListener('click', () => {
   document.documentElement.classList.toggle('dark');
