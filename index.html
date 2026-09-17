@@ -2,46 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet">
-    
+
+  
     <title>Vite App</title>
   </head>
   <body>
     <script type="module" src="/main.js"></script>
-  
-<div class="mt-24 grid grid-cols-2 gap-8 max-w-7xl mx-auto p-8 bg-sky-950 border-solid border-1 rounded-2xl border-t-7 border-r-7 border-amber-400 min-w-s">    
-  <div class="row-span-2 bg-sky-400 rounded-2xl p-8 border-r-5 border-amber-400 hover:bg-cyan-400 hover:border-amber-300 active:bg-cyan-400 active:border-transparent active:translate-x-1 group">
+
+
+<div class="relative absolute top-[500px] right-[28%] max-w-[200px]">
+  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
+  <div class="pixel-corners bg-fuchsia-300 p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+    <p id="date-sticky" class="text-sky-800 text-xs"></p>
+  </div>
+</div>
+    
+<div class="relative mt-24 grid grid-cols-2 gap-8 max-w-7xl mx-auto p-8 bg-sky-950 border-solid border-1 rounded-[2px] border-2 border-blue-400 min-w-s shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)] shadow-mist-300">    
+    <div class="absolute top-3 right-3 w-6 h-6 flex items-center justify-center bg-red-300 border-2 border-amber-400 text-white text-xs font-bold cursor-pointer hover:bg-red-400 z-10 active:bg-violet-600">
+    X
+  </div>
+  <div class="row-span-2 bg-sky-400 rounded-[2px] p-8 border-r-5 border-amber-400 hover:bg-cyan-400 hover:border-amber-300 active:bg-cyan-400 active:border-transparent active:translate-x-1 group">
       <div class="col-start-1 row-start-1 p-4">
 
       </div>
       <div class="col-start-1 row-start-2 max-w-8 border-b-4 border-dashed border-sky-500 group-active:border-transparent"><img class="group-active:translate-y-1 group-active:translate-x-1 group-active:border-dashed group-active:border-b-4 group-active:border-amber-200" src="assets/next.png"></div>
     </div>
-    <div class="col-start-2 row-start-1 bg-sky-600 p-4 rounded-2xl place-self-center border-r-4 border-amber-400 hover:bg-sky-500 hover:border-amber-200 active:bg-sky-500 active:border-transparent active:translate-x-1 group">
+    <div class="col-start-2 row-start-1 bg-sky-600 p-4 rounded-[2px] place-self-center border-r-4 border-amber-400 hover:bg-sky-500 hover:border-amber-200 active:bg-sky-500 active:border-transparent active:translate-x-1 group">
       <div class="max-w-8 "><img src="assets/bulb.png"></div>
     </div>
-    <div class="col-start-2 row-start-2 bg-sky-300 p-7 rounded-2xl place-self-center border-r-4 border-amber-400 hover:bg-sky-200 hover:border-amber-200 active:bg-sky-200 active:border-transparent active:translate-x-1 group">
+    <div class="col-start-2 row-start-2 bg-sky-300 p-7 rounded-[2px] place-self-center border-r-4 border-amber-400 hover:bg-sky-200 hover:border-amber-200 active:bg-sky-200 active:border-transparent active:translate-x-1 group">
       <div class="max-w-8 "><img src="assets/document.png"></div>
     </div>
     
-
 
     <div class="max-w-10">
         <!--sprite-->
         <img src="assets/mallow_Idle.gif">
       </div>
-       
+
   </div>
   
+
+
   <div class="relative">
-  <!-- tape piece -->
+  <!--tape-->
   <div class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-3 w-16 h-6 bg-white/40 border border-white/60 shadow-sm"></div>
-  <!-- sticky note -->
-  <div class="bg-yellow-200 p-6 bg-amber-100 border-solid border-3 border-amber-200 shadow-md text-red-300">
-    Sticky
+  <!--sticky-->
+  <div class="sticky bg-yellow-200 p-6 bg-amber-100 border-solid border-3 border-amber-200 shadow-[7px_7px_0px_0px_rgba(0,0,0,0.3)] shadow-mist-300 text-amber-500">
+    <p>
+     
+      # Checklist:<br>
+      ☐<br>
+      ☐ Dictionary first release
+      
+    </p>
   </div>
 </div>
+
+<div class="relative absolute top-[1000px] right-[28%] max-w-[200px]">
+  <!--tape-->
+  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2= w-16 h-6 bg-white/40 border border-white/60"></div>
+  <!--sticky-->
+  <div class="pixel-corners bg-purple-300 p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+    <p class="text-sky-800 text-xs">Note to self:<br> remember to drag and drop</p>
+  </div>
+</div>
+
 
 
 
@@ -74,11 +103,28 @@
       <img class="" src="assets/sticker.png">
       <p> Notella</p>
     </div>
-    <div tabindex="0" class="Bellbloom max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none">
+    <div tabindex="0" class="Bellbloom col-start-8 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none">
       <img class="" src="assets/bookmark-variant.png">
       <p> Bellbloom</p>
     </div>
+     <div tabindex="0" class=" max-w-18 col-start-3 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none">
+      <img class="" src="assets/rabbit.png">
+      <p> rabbit food</p>
+    </div>
+     <div tabindex="0" class=" max-w-18 col-start-3 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none">
+      <img class="" src="assets/trash.png">
+      <p> junk</p>
+    </div>
   </div>
+
+<div class="relative absolute top-[20%] left-[28%] max-w-[200px]">
+  <!--tape-->
+  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
+    <!--sticky-->
+  <div class="pixel-corners bg-sky-200 p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+    <p class="text-sky-800 text-xs">remember to feed mallow</p>
+  </div>
+</div>
 
   <!---
   <div class="grid grid-rows-3  fixed top-0 right-0 h-screen w-20 bg-blue-400 border-l-4 border-amber-400">

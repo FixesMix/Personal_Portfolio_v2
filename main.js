@@ -28,3 +28,4 @@ document.querySelector(".Bellbloom").addEventListener('dblclick', () => {
   window.open('https://github.com/FixesMix/Bellbloom', '_blank');
 });
 
+document.getElementById('date-sticky').textContent = "Today is " + new Date().toLocaleDateString();
