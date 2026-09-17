@@ -3,22 +3,28 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+document.querySelector(".The-Dictionary").addEventListener('dblclick', () => {
+  window.open('https://github.com/FixesMix/Dictionary_1.0.0', '_blank');
+});
+
+document.querySelector(".CYOA").addEventListener('dblclick', () => {
+  window.open('https://github.com/FixesMix/Bellbloom', '_blank');
+});
+
+document.querySelector(".PC-Monitor").addEventListener('dblclick', () => {
+  window.open('https://github.com/FixesMix/System_Dashboard', '_blank');
+});
+
+document.querySelector(".portfolio-v0").addEventListener('dblclick', () => {
+  window.open('https://github.com/FixesMix/Portfolio_v0', '_blank');
+});
+
+document.querySelector(".Notella").addEventListener('dblclick', () => {
+  window.open('https://github.com/FixesMix/Notella', '_blank');
+});
+
+document.querySelector(".Bellbloom").addEventListener('dblclick', () => {
+  window.open('https://github.com/FixesMix/Bellbloom', '_blank');
+});
+
