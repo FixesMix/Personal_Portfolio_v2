@@ -29,3 +29,6 @@ document.querySelector(".Bellbloom").addEventListener('dblclick', () => {
 });
 
 document.getElementById('date-sticky').textContent = "Today is " + new Date().toLocaleDateString();
+
+
+
