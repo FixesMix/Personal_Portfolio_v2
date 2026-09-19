@@ -3,6 +3,11 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+// Scroll to projects
+document.querySelector('.hero-scroll-to-projects').addEventListener('click', () => {
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+});
+
 // Toggle dark mode
 const lightbulb = document.querySelector('.col-start-2.row-start-1');
 
@@ -106,6 +111,14 @@ function isOverlapping(el, target) {
   return !(a.right < b.left || a.left > b.right || a.bottom < b.top || a.top > b.bottom);
 }
 
+
+
+
+
+document.querySelectorAll('.project-icon').forEach((el) => {
+  el.addEventListener('mouseenter', () => popIcon(el));
+});
+
 function pushOutOfElement(el, target, buffer = PROTECTED_ZONE_BUFFER) {
   const a = el.getBoundingClientRect();
   const b = target.getBoundingClientRect();
@@ -184,7 +197,7 @@ function makeDraggable(el, gridSize = 80) {
   // Register this icon's starting cell so nothing else can snap on top of it
   settlePosition(el, gridSize);
 
-  el.addEventListener('mousedown', (e) => {
+   el.addEventListener('mousedown', (e) => {
     isDragging = true;
     offsetX = e.clientX - el.getBoundingClientRect().left;
     offsetY = e.clientY - el.getBoundingClientRect().top;
@@ -204,6 +217,8 @@ function makeDraggable(el, gridSize = 80) {
     settlePosition(el, gridSize);
   });
 }
+
+
 
 window.addEventListener('load', () => {
   document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));

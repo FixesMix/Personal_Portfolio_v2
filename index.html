@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head> 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -24,7 +24,7 @@
     <div class="absolute top-3 right-3 w-6 h-6 flex items-center justify-center bg-red-300 border-2 border-amber-400 text-white text-xs font-bold cursor-pointer hover:bg-red-400 z-10 active:bg-violet-600">
     X
   </div>
-  <div class="-rotate-3 row-span-2 bg-sky-400 rounded-[2px] p-8 border-r-5 border-amber-400 hover:bg-cyan-400 hover:border-amber-300 active:bg-cyan-400 active:border-transparent active:translate-x-1 group">
+  <div class="hero-scroll-to-projects -rotate-3 row-span-2 bg-sky-400 rounded-[2px] p-8 border-r-5 border-amber-400 hover:bg-cyan-400 hover:border-amber-300 active:bg-cyan-400 active:border-transparent active:translate-x-1 group">
       <div class="col-start-1 row-start-1 p-4">
 
       </div>
@@ -75,63 +75,73 @@
   <!--tape-->
   <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2= w-16 h-6 bg-white/40 border border-white/60"></div>
   <!--sticky-->
-  <div class="pixel-corners bg-purple-300 p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-    <p class="text-sky-800 text-xs">Note to self:<br> drag and drop</p>
+  <div class="pixel-corners bg-sky-200 p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+    <p class="text-sky-800 text-xs">remember to feed mallow</p>
   </div>
 </div>
 
+<div class="protected-zone relative absolute top-[145px] right-[0%] max-w-[200px]">
+  <!--tape-->
+  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2= w-16 h-6 bg-white/40 border border-white/60"></div>
+  <!--sticky-->
+  <div class="pixel-corners bg-blue-300 p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+    <p class="text-sky-800 text-xs">Projects</p>
+  </div>
+</div>
 
   <div id="projects" class="grid max-w-[90rem] mx-auto mt-16 p-6 gap-8 grid-cols-10 grid-rows-10">
-    <div  tabindex="0" class="project-icon col-start-1 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 col-start-1 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img src="assets/mallow_Fall.gif">
       <p>fall.gif</p>
     </div>
-    <div  tabindex="0" class="project-icon col-start-2 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 col-start-2 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/mallow_Idle.gif">
       <p> mallow.gif</p>
     </div>
-    <div  tabindex="0" class="project-icon The-Dictionary col-start-3 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 The-Dictionary col-start-3 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/The_Dictionary.png">
       <p> The Dictionary </p>
     </div>
-    <div  tabindex="0" class="project-icon PC-Monitor col-start-4 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 PC-Monitor col-start-4 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/pc_monitor.png">
       <p> PC Monitor </p>
     </div>
-    <div  tabindex="0" class="project-icon CYOA col-start-2 row-start-2 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 CYOA col-start-2 row-start-2 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/sun.png">
       <p> The Sun</p>
     </div>
-    <div  tabindex="0" class="project-icon portfolio-v0 col-start-5 row-start-4 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 portfolio-v0 col-start-10 row-start-2 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/halo.png">
       <p> Portfolio v0</p>
     </div>
-    <div  tabindex="0" class="project-icon Notella col-start-7 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 Notella col-start-7 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/sticker.png">
       <p> Notella</p>
     </div>
-    <div  tabindex="0" class="project-icon Bellbloom col-start-8 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+    <div  tabindex="0" class="project-icon icon-hop hover:scale-105 Bellbloom col-start-8 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/bookmark-variant.png">
       <p> Bellbloom</p>
     </div>
-     <div  tabindex="0" class="project-icon max-w-18 col-start-3 row-start-3 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+     <div  tabindex="0" class="project-icon icon-hop hover:scale-105 max-w-18 col-start-3 row-start-3 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/rabbit.png">
       <p> rabbit food</p>
     </div>
-     <div  tabindex="0" class="project-icon max-w-18 col-start-3 row-start-4 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-red-300 text-xs">
+     <div  tabindex="0" class="project-icon icon-hop hover:scale-105 max-w-18 col-start-10 row-start-1 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/trash.png">
       <p> junk</p>
     </div>
   </div>
 
-<div class="protected-zone relative absolute top-[20%] left-[28%] max-w-[200px]">
+<div class="protected-zone relative absolute top-[10%] left-[28%] max-w-[200px]">
   <!--tape-->
   <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
     <!--sticky-->
-  <div class="pixel-corners bg-sky-200 p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
-    <p class="text-sky-800 text-xs">remember to feed mallow</p>
+  <div class="pixel-corners bg-purple-300 p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+    <p class="text-sky-800 text-xs">Note to self:<br> drag and drop</p>
   </div>
 </div>
+
+
 
   <!---
   <div class="grid grid-rows-3  fixed top-0 right-0 h-screen w-20 bg-blue-400 border-l-4 border-amber-400">
