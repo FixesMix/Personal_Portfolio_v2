@@ -3,6 +3,13 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+const desktopMode = window.matchMedia('(min-width: 768px)');
+
+window.addEventListener('load', () => {
+  if (!desktopMode.matches) return;   
+  document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));
+});
+
 // Scroll to projects
 document.querySelector('.hero-scroll-to-projects').addEventListener('click', () => {
   document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
@@ -189,11 +196,21 @@ function makeDraggable(el, gridSize = 80) {
   el.style.left = `${rect.left + window.scrollX}px`;
   el.style.top = `${rect.top + window.scrollY}px`;
   el.style.margin = '0';
+  el.classList.add('touch-none');
+
+ 
+
 
   // Register this icon's starting cell so nothing else can snap on top of it
   settlePosition(el, gridSize);
 
    el.addEventListener('mousedown', (e) => {
+    el.addEventListener('pointerdown', (e) => {
+    isDragging = true;
+    el.dataset.dragged = '';
+    el.setPointerCapture(e.pointerId);
+    });
+
     isDragging = true;
     offsetX = e.clientX - el.getBoundingClientRect().left;
     offsetY = e.clientY - el.getBoundingClientRect().top;
@@ -203,6 +220,7 @@ function makeDraggable(el, gridSize = 80) {
   });
 
   document.addEventListener('mousemove', (e) => {
+    
     if (!isDragging) return;
     el.style.left = `${e.clientX - offsetX + window.scrollX}px`;
     el.style.top = `${e.clientY - offsetY + window.scrollY}px`;
