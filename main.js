@@ -202,6 +202,7 @@ function makeDraggable(el, gridSize = 80) {
     offsetX = e.clientX - el.getBoundingClientRect().left;
     offsetY = e.clientY - el.getBoundingClientRect().top;
     el.style.zIndex = 1000;
+    el.focus();
     e.preventDefault();
   });
 
