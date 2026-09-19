@@ -8,6 +8,8 @@
   100% { transform: translateY(0); }
 }
 
+
+
 .icon-hop:hover {
   animation: icon-hop 0.25s ease-out;
 }
@@ -125,3 +127,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
