@@ -28,8 +28,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   background-image: 
-  linear-gradient(to right, #5DF8D8 1px, transparent 1px),
-  linear-gradient(to bottom, #5DF8D8 1px, transparent 1px);
+  linear-gradient(to right, rgba(93,248,216,0.35) 1px, transparent 1px),
+  linear-gradient(to bottom, rgba(93,248,216,0.35) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -56,7 +56,8 @@ body {
   flex-direction: column;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 180vh;
+  position: relative;
 }
 
 h1 {
@@ -127,4 +128,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-

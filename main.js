@@ -156,8 +156,8 @@ function resolveCollisions(el, targets) {
 }
 
 function clampToPage(el) {
-  const pageWidth = document.documentElement.scrollWidth;
-  const pageHeight = document.documentElement.scrollHeight;
+  const pageWidth = document.documentElement.clientWidth;
+  const pageHeight = document.body.offsetHeight;
   const rect = el.getBoundingClientRect();
 
   let left = parseFloat(el.style.left);
