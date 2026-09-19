@@ -115,10 +115,6 @@ function isOverlapping(el, target) {
 
 
 
-document.querySelectorAll('.project-icon').forEach((el) => {
-  el.addEventListener('mouseenter', () => popIcon(el));
-});
-
 function pushOutOfElement(el, target, buffer = PROTECTED_ZONE_BUFFER) {
   const a = el.getBoundingClientRect();
   const b = target.getBoundingClientRect();
