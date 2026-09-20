@@ -5,15 +5,29 @@ import { setupCounter } from './counter.js'
 
 const desktopMode = window.matchMedia('(min-width: 768px)');
 
+
 window.addEventListener('load', () => {
   if (!desktopMode.matches) return;   
   document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));
 });
 
-// Scroll to projects
+// Scroll to projects, fade 
 document.querySelector('.hero-scroll-to-projects').addEventListener('click', () => {
   document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
 });
+
+document.querySelectorAll('.project-icon').forEach((el) => {
+  el.style.setProperty('--delay', `${Math.random() * 700}ms`);
+});
+
+const revealObserver = new IntersectionObserver(([entry], obs) => {
+  if (!entry.isIntersecting) return;
+  document.body.classList.add('icons-visible');
+  obs.disconnect();
+}, { rootMargin: '0px 0px -25% 0px' });
+
+revealObserver.observe(document.getElementById('projects'));
+
 
 // Toggle dark mode
 const lightbulb = document.querySelector('.col-start-2.row-start-1');
