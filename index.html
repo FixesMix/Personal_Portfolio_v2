@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head> 
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +11,36 @@
   <body>
     <script type="module" src="/main.js"></script>
 
-<div class="protected-zone absolute top-[30vh] right-[20vw] max-w-[200px]">
+<div class="protected-zone relative max-w-[200px] mt-8 mx-auto">
+  <!--tape-->
+  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
+  <!--sticky-->
+  <div class="pixel-corners bg-[#a8b8d8] p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
+    <p class="text-sky-800 text-base">Aura</p>
+  </div>
+</div>
+
+<div class="protected-zone relative max-w-[200px] mt-4 mx-auto">
   <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
   <div class="pixel-corners bg-[#e8d9a8] p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
     <p id="date-sticky" class="text-[#6b5a2a] text-xs"></p>
   </div>
 </div>
-    
-<div class="protected-zone rotate-2 relative mt-24 grid grid-cols-2 gap-8 max-w-7xl mx-auto p-8 bg-[#1f3f5c] border-solid border-1 rounded-[2px] border-2 border-[#3368a0] min-w-s shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)] shadow-mist-300">    
+
+<div class="protected-zone rotate-2 relative mt-8 grid grid-cols-2 gap-8 max-w-7xl mx-auto p-8 bg-[#1f3f5c] border-solid border-1 rounded-[2px] border-2 border-[#3368a0] min-w-s shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)] shadow-mist-300">
     <div class="absolute top-3 right-3 w-6 h-6 flex items-center justify-center bg-red-300 border-2 border-amber-400 text-white text-xs font-bold cursor-pointer hover:bg-red-400 z-10 active:bg-violet-600">
     X
   </div>
   <div class="hero-scroll-to-projects -rotate-3 row-span-2 bg-[#3368a0] rounded-[2px] p-8 border-r-5 border-[#c9a24c] hover:bg-[#3d76b3] hover:border-[#d9b264] active:border-transparent active:translate-x-1 group">
-      <div class="col-start-1 row-start-1 p-4">
+      <div class="p-4">
 
       </div>
-      <div class="col-start-1 row-start-2 max-w-8 border-b-4 border-dashed border-sky-500 group-active:border-transparent"><img class="group-active:translate-y-1 group-active:translate-x-1 group-active:border-dashed group-active:border-b-4 group-active:border-amber-200" src="assets/next.png"></div>
+      <div class="max-w-8 border-b-4 border-dashed border-sky-500 group-active:border-transparent"><img class="group-active:translate-y-1 group-active:translate-x-1 group-active:border-dashed group-active:border-b-4 group-active:border-amber-200" src="assets/next.png"></div>
     </div>
-    <div class="rotate-5 col-start-2 row-start-1 bg-[#66a3bf] p-4 rounded-[2px] place-self-center border-r-4 border-[#c9a24c] hover:bg-[#75b0cb] hover:border-[#d9b264] active:border-transparent active:translate-x-1 group">
+    <div class="lightbulb-toggle rotate-5 bg-[#66a3bf] p-4 rounded-[2px] place-self-center border-r-4 border-[#c9a24c] hover:bg-[#75b0cb] hover:border-[#d9b264] active:border-transparent active:translate-x-1 group">
       <div class="max-w-8 "><img src="assets/bulb.png"></div>
     </div>
-    <div class="-rotate-3 col-start-2 row-start-2 bg-[#c8dfdb] p-7 rounded-[2px] place-self-center border-r-4 border-[#c9a24c] hover:bg-[#d5e8e4] hover:border-[#d9b264] active:border-transparent active:translate-x-1 group">
+    <div class="-rotate-3 bg-[#c8dfdb] p-7 rounded-[2px] place-self-center border-r-4 border-[#c9a24c] hover:bg-[#d5e8e4] hover:border-[#d9b264] active:border-transparent active:translate-x-1 group">
       <div class="max-w-8 "><img src="assets/document.png"></div>
     </div>
 
@@ -43,11 +52,11 @@
   <!--sticky-->
   <div class="protected-zone bg-yellow-200 p-6 bg-amber-100 border-solid border-3 border-amber-200 shadow-[7px_7px_0px_0px_rgba(0,0,0,0.3)] shadow-mist-300 text-amber-500 ">
     <p>
-     
+
       # Checklist:<br>
       ☒ Interview <br>
       ☐ Get hired
-      
+
     </p>
   </div>
 </div>
@@ -60,75 +69,68 @@
   </div>
 </div>
 
-<div class="protected-zone absolute top-[12vh] right-[48vw] max-w-[200px]">
-  <!--tape-->
-  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
-  <!--sticky-->
-  <div class="pixel-corners bg-[#a8b8d8] p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
-    <p class="text-sky-800 text-base">Aura</p>
-  </div>
-</div>
-
-  <div id="projects" class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-10 
-     grid-rows-none sm:grid-rows-none">
-    <div  tabindex="0" class="project-icon  col-start-1 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+  <div id="projects" class="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-10
+     grid-rows-none">
+    <div  tabindex="0" class="project-icon max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img src="assets/mallow_Fall.gif">
       <p>fall.gif</p>
     </div>
-    <div  tabindex="0" class="mallow-icon project-icon  col-start-2 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="mallow-icon project-icon max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/mallow_Idle.gif">
       <p> mallow.gif</p>
     </div>
-    <div  tabindex="0" class="project-icon  The-Dictionary col-start-5 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="project-icon  The-Dictionary max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/The_Dictionary.png">
       <p> The Dictionary </p>
     </div>
-    <div  tabindex="0" class="project-icon  PC-Monitor col-start-3 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="project-icon  PC-Monitor max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/pc_monitor.png">
       <p> PC Monitor </p>
     </div>
-    <div  tabindex="0" class="project-icon  CYOA col-start-2 row-start-2 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="project-icon CYOA max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/sun.png">
       <p> The Sun</p>
     </div>
-    <div  tabindex="0" class="project-icon  portfolio-v0 col-start-10 row-start-2 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="project-icon  portfolio-v0 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/halo.png">
       <p> Portfolio v0</p>
     </div>
-    <div  tabindex="0" class="project-icon  Notella col-start-7 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="project-icon  Notella max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/sticker.png">
       <p> Notella</p>
     </div>
-    <div  tabindex="0" class="project-icon  Bellbloom col-start-8 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+    <div  tabindex="0" class="project-icon  Bellbloom max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/bookmark-variant.png">
       <p> Bellbloom</p>
     </div>
-     <div  tabindex="0" class="project-icon  max-w-18 col-start-3 row-start-3 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+     <div  tabindex="0" class="project-icon  max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/rabbit.png">
       <p> rabbit food</p>
     </div>
-     <div  tabindex="0" class="project-icon  max-w-18 col-start-10 row-start-1 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
+     <div  tabindex="0" class="project-icon  max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img class="" src="assets/trash.png">
       <p> junk</p>
     </div>
   </div>
 
-  
-<div class="protected-zone absolute top-[80vh] left-[10vw] max-w-[200px]">
-  <!--tape-->
-  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
-    <!--sticky-->
-  <div class="pixel-corners bg-violet-200 p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
-    <p class="text-[#6b3624] text-xs">remember to feed mallow</p>
-  </div>
-</div>
 
-<div class="protected-zone absolute top-[100vh] right-[25vw] max-w-[200px]">
-  <!--tape-->
-  <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
-  <!--sticky-->
-  <div class="pixel-corners bg-violet-200 p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
-    <p class="text-sky-800 text-xs">Note to self:<br> drag and drop</p>
+<div class="flex flex-wrap justify-center items-start gap-8 mt-16 px-6">
+  <div class="protected-zone relative max-w-[200px]">
+    <!--tape-->
+    <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
+    <!--sticky-->
+    <div class="pixel-corners bg-violet-200 p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
+      <p class="text-[#6b3624] text-xs">remember to feed mallow</p>
+    </div>
+  </div>
+
+  <div class="protected-zone relative max-w-[200px]">
+    <!--tape-->
+    <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
+    <!--sticky-->
+    <div class="pixel-corners bg-violet-200 p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
+      <p class="text-sky-800 text-xs">Note to self:<br> drag and drop</p>
+    </div>
   </div>
 </div>
 

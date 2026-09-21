@@ -6,12 +6,15 @@ import { setupCounter } from './counter.js'
 const desktopMode = window.matchMedia('(min-width: 768px)');
 
 
-window.addEventListener('load', () => {
-  if (!desktopMode.matches) return;   
-  document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));
-});
+// TEMPORARILY DISABLED while working on responsive CSS — this pulls every
+// .project-icon out of the grid and repositions it with absolute pixels,
+// which fights the CSS grid layout. Re-enable once the grid is finalized.
+// window.addEventListener('load', () => {
+//   if (!desktopMode.matches) return;
+//   document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));
+// });
 
-// Scroll to projects, fade 
+// Scroll to projects, fade
 document.querySelector('.hero-scroll-to-projects').addEventListener('click', () => {
   document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
 });
@@ -30,7 +33,12 @@ revealObserver.observe(document.getElementById('projects'));
 
 
 // Toggle dark mode
-const lightbulb = document.querySelector('.col-start-2.row-start-1');
+// Was '.col-start-2.row-start-1' — a layout class, not a stable hook. It
+// silently broke (and crashed everything below it) the moment those layout
+// classes were removed during the responsive-grid cleanup. Using a
+// dedicated class that nothing else touches means restyling the hero card
+// again can't break this.
+const lightbulb = document.querySelector('.lightbulb-toggle');
 
 lightbulb.addEventListener('click', () => {
   document.documentElement.classList.toggle('dark');
@@ -135,7 +143,6 @@ function isOverlapping(el, target) {
 
 
 
-
 function pushOutOfElement(el, target, buffer = PROTECTED_ZONE_BUFFER) {
   const a = el.getBoundingClientRect();
   const b = target.getBoundingClientRect();
@@ -212,7 +219,7 @@ function makeDraggable(el, gridSize = 80) {
   el.style.margin = '0';
   el.classList.add('touch-none');
 
- 
+
 
 
   // Register this icon's starting cell so nothing else can snap on top of it
@@ -234,7 +241,7 @@ function makeDraggable(el, gridSize = 80) {
   });
 
   document.addEventListener('mousemove', (e) => {
-    
+
     if (!isDragging) return;
     el.style.left = `${e.clientX - offsetX + window.scrollX}px`;
     el.style.top = `${e.clientY - offsetY + window.scrollY}px`;
@@ -249,6 +256,11 @@ function makeDraggable(el, gridSize = 80) {
 
 
 
-window.addEventListener('load', () => {
-  document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));
-});
+// TEMPORARILY DISABLED — see note above. This was the second, redundant
+// registration of the same makeDraggable pass (it never even fired while
+// the .col-start-2.row-start-1 crash below stopped the script early, but
+// disabling it explicitly here too so nothing surprises you when that
+// selector bug gets fixed).
+// window.addEventListener('load', () => {
+//   document.querySelectorAll('.project-icon').forEach((el) => makeDraggable(el, 80));
+// });
