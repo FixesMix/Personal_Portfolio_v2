@@ -11,7 +11,7 @@
   <body>
     <script type="module" src="/main.js"></script>
 
-<div class="protected-zoneabsolute top-[10vh] max-w-[200px]">
+<div class="protected-zone absolute top-[30vh] right-[20vw] max-w-[200px]">
   <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
   <div class="pixel-corners bg-[#e8d9a8] p-6 rotate-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
     <p id="date-sticky" class="text-[#6b5a2a] text-xs"></p>
@@ -60,16 +60,17 @@
   </div>
 </div>
 
-<div class="protected-zone absolute top-[100px] right-[45%] max-w-[200px]">
+<div class="protected-zone absolute top-[12vh] right-[48vw] max-w-[200px]">
   <!--tape-->
   <div class="absolute -top-3 left-1/2 -translate-x-1/2 rotate-2 w-16 h-6 bg-white/40 border border-white/60"></div>
   <!--sticky-->
   <div class="pixel-corners bg-[#a8b8d8] p-6 -rotate-7 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] hover:sepia-10">
-    <p class="text-sky-800 text-m">Aura</p>
+    <p class="text-sky-800 text-base">Aura</p>
   </div>
 </div>
 
-  <div id="projects" class="grid max-w-[90rem] mx-auto mt-16 p-6 gap-8 grid-cols-10 grid-rows-10">
+  <div id="projects" class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-10 
+     grid-rows-none sm:grid-rows-none">
     <div  tabindex="0" class="project-icon  col-start-1 row-start-1 max-w-18 mx-auto mt-16 rounded-sm hover:bg-sky-400/10 active:bg-sky-400/20 focus:bg-sky-400/20 focus:outline-none text-center text-blue-700 text-xs">
       <img src="assets/mallow_Fall.gif">
       <p>fall.gif</p>
