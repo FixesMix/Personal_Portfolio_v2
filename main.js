@@ -21,12 +21,7 @@ const revealObserver = new IntersectionObserver(([entry], obs) => {
 revealObserver.observe(document.getElementById('projects'));
 
 
-// Toggle dark mode
-// Was '.col-start-2.row-start-1' — a layout class, not a stable hook. It
-// silently broke (and crashed everything below it) the moment those layout
-// classes were removed during the responsive-grid cleanup. Using a
-// dedicated class that nothing else touches means restyling the hero card
-// again can't break this.
+// Dark mode
 const lightbulb = document.querySelector('.lightbulb-toggle');
 
 lightbulb.addEventListener('click', () => {
