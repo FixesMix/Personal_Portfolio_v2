@@ -2,8 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @custom-variant dark (&:where(.dark, .dark *));
 
+@keyframes icon-hop {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+.icon-hop:hover {
+  animation: icon-hop 0.25s ease-out;
+}
 :root {
-  cursor: url("assets/cursor_lime.png"), auto;
+  font-size: 115%;
   font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -41,8 +52,11 @@ a:hover {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
   min-width: 320px;
-  min-height: 180vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -117,4 +131,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-

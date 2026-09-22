@@ -36,6 +36,7 @@ if (localStorage.getItem('theme') === 'dark') {
 // Project links
 const projectLinks = {
   '.The-Dictionary': 'https://github.com/FixesMix/Dictionary_1.0.0',
+  '.JSON-parser': 'https://github.com/FixesMix/JSON_Parser',
   '.CYOA': 'https://github.com/FixesMix/Bellbloom',
   '.PC-Monitor': 'https://github.com/FixesMix/System_Dashboard',
   '.portfolio-v0': 'https://github.com/FixesMix/Portfolio_v0',
